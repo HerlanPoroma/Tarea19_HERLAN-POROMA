@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "menu menu menu"
+        "contenido1 contenido2 ads"
+        "footer footer footer"
+        "redes facebook youtube";
+    grid-template-columns: 1fr 1fr 200px; /* Flexible columns */
+    grid-template-rows: auto auto 1fr auto auto;
+    gap: 10px;
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    background-color: yellow;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: lightgrey;
+    padding: 10px;
+    text-align: center;
+}
+
+.contenido1 {
+    grid-area: contenido1;
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+}
+
+.contenido2 {
+    grid-area: contenido2;
+    background-color: lightpink;
+    padding: 10px;
+    text-align: center;
+}
+
+.ads {
+    grid-area: ads;
+    background-color: lightgreen;
